@@ -2,7 +2,7 @@
 Welcome to my personal portfolio website! 🚀 This portfolio showcases my projects, skills, certifications, and experiences in a clean and responsive design. Built with HTML, CSS, JavaScript, and enhanced with animations and icons, the portfolio reflects my journey and expertise as an aspiring developer and engineer.
 
 🔗 Live Preview
-[Click here to view the live portfolio] (https://harshavardhan-vaddi.github.io/Portfolio/) 
+[[Click here to view the live portfolio](https://harshavardhan-vaddi.github.io/Portfolio/)]
 
 📌 Features
 💻 Fully responsive design for all devices
