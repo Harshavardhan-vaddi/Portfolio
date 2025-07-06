@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harsha Vardhan Vaddi</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            animation: fadeInBody 1s ease-in;
+        }
+
+        .hero-section {
+            padding: 60px 0;
+            text-align: center;
+            animation: fadeInUp 1s ease;
+        }
+
+        .headshot img {
+            width: 200px;
+            border-radius: 50%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: zoomIn 1.5s ease;
+        }
+
+        .headshot img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .links a {
+            margin: 10px;
+            transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+            animation: fadeInButton 0.8s ease forwards;
+        }
+
+        .btn-outline-primary:hover {
+            background-color: #0d6efd;
+            color: white;
+        }
+
+        .btn-outline-secondary:hover {
+            background-color: #6c757d;
+            color: white;
+        }
+
+        .btn-outline-success:hover {
+            background-color: #198754;
+            color: white;
+        }
+
+        .btn-outline-warning:hover {
+            background-color: #ffc107;
+            color: black;
+        }
+
+        .btn-outline-info:hover {
+            background-color: #0dcaf0;
+            color: white;
+        }
+
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeInCard 1s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .section-title {
+            margin-bottom: 30px;
+            animation: fadeInDown 1s ease;
+        }
+
+        footer {
+            background-color: #212529;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            transition: background-color 0.3s ease;
+            animation: fadeInUp 1s ease;
+        }
+
+        #skills .text-center {
+            min-width: 100px;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes fadeInButton {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInCard {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes fadeInBody {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Harsha Vardhan Vaddi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item"><a class="nav-link" href="https://github.com/HarshaVardhan-vaddi/"
+                            target="_blank"><i class="fab fa-github"></i> Github</a></li>
+                    <li class="nav-item"><a class="nav-link"
+                            href="https://www.linkedin.com/in/vaddi-harsha-vardhan-68130a259/" target="_blank"><i
+                                class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mailto:vhvardhan.naidu@gmail.com" target="_blank"><i
+                                class="fas fa-envelope"></i> Email</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Hero Section -->
+    <section class="hero-section bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>Hi, I'm Harsha Vardhan Vaddi</h2>
+                    <p class="lead">Aspiring Full-Stack Developer</p>
+                    <div class="links">
+                        <a href="#skills" class="btn btn-outline-primary"><i class="fas fa-code"></i> Skills</a>
+                        <a href="#projects" class="btn btn-outline-secondary"><i class="fas fa-pen"></i> Projects</a>
+                        <a href="#certifications" class="btn btn-outline-success"><i class="fas fa-certificate"></i>
+                            Certifications</a>
+                        <a href="#hackathons" class="btn btn-outline-warning"><i class="fas fa-lightbulb"></i>
+                            Hackathons</a>
+                        <a href="#contact" class="btn btn-outline-info"><i class="fas fa-address-card"></i> Contact</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="headshot">
+                        <img src="Images/dp.jpg" alt="Harsha Vardhan" class="rounded float-right" style="width: 300px;" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+<section id="about" class="py-5 bg-white">
+  <div class="container">
+    <h2 class="section-title text-center">About Me</h2>
+    <p class="text-start"><strong>Hello! I'm V. Harsha Vardhan 👋🏻</strong></p>
+    <p class="text-justify" style="text-align: justify;">
+      I'm an enthusiastic <strong>Electronics and Communication Engineering (ECE)</strong> student with a deep interest in software development and emerging technologies.
+    </p>
+    <p class="text-justify" style="text-align: justify;">
+      I specialize in <strong>Python</strong>, <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, and <strong>Java</strong>, and I'm proficient in frameworks like <strong>Bootstrap</strong>, <strong>React</strong>, and <strong>Flask</strong>.
+    </p>
+    <p class="text-justify" style="text-align: justify;">
+      A tech enthusiast at heart, I enjoy turning ideas into real-world applications and continuously improving my skills. My ultimate goal is to become a versatile and impactful <strong>Full Stack Developer</strong>.
+    </p>
+  </div>
+</section>
+
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 bg-light text-center">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="d-flex flex-wrap justify-content-center gap-4">
+                <div class="text-center">
+                    <i class="fab fa-html5 fa-3x text-danger"></i>
+                    <h5 class="mt-2">HTML</h5>
+                </div>
+                <div class="text-center">
+                    <i class="fab fa-css3-alt fa-3x text-primary"></i>
+                    <h5 class="mt-2">CSS</h5>
+                </div>
+                <div class="text-center">
+                    <i class="fab fa-js fa-3x text-warning"></i>
+                    <h5 class="mt-2">JavaScript</h5>
+                </div>
+                <div class="text-center">
+                    <i class="fab fa-python fa-3x text-primary"></i>
+                    <h5 class="mt-2">Python</h5>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-server fa-3x text-warning"></i>
+                    <h5 class="mt-2">Express</h5>
+                </div>
+                <div class="text-center">
+                    <i class="fab fa-react fa-3x text-primary"></i>
+                    <h5 class="mt-2">React</h5>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-white text-center">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <a href="https://github.com/Harshavardhan-vaddi/Forcasting-Future-water-needs-based-on-reservoir-Data"
+                        class="text-decoration-none text-dark" target="_blank">
+                        <div class="card h-100 border border-success border-1">
+                            <img src="Images/Forecasting.png" class="card-img-top" alt="Forecasting Project">
+                            <div class="card-body">
+                                <h5 class="card-title">Forecasting Future Water Requirements</h5>
+                                <p class="card-text">Built using Flask and ML, this project predicts future water
+                                    demands
+                                    based on reservoir data.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <a href="https://github.com/Harshavardhan-vaddi/NestHunt-Full-Stack"
+                        class="text-decoration-none text-dark" target="_blank">
+                        <div class="card h-100 border border border-info border-1">
+                            <img src="Images/nestHunt.jpeg" class="card-img-top" alt="NestHunt Project">
+                            <div class="card-body">
+                                <h5 class="card-title">NestHunt</h5>
+                                <p class="card-text">A real estate app built with MERN stack, allowing users to search
+                                    and
+                                    browse properties.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <a href="https://github.com/Harshavardhan-vaddi/G-Mart" class="text-decoration-none text-dark"
+                        target="_blank">
+                        <div class="card h-100 border border-primary border-1">
+                            <img src="Images/G-Mart.png" class="card-img-top" alt="NestHunt Project">
+                            <div class="card-body">
+                                <h5 class="card-title">G-Mart</h5>
+                                <p class="card-text">Grocery Mart is an online store offering fresh groceries and daily
+                                    essentials delivered conveniently to your doorstep.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internships Section -->
+    <section id="internships" class="py-5 bg-light text-center">
+        <div class="container">
+            <h2 class="section-title">Internships</h2>
+            <div class="row">
+
+                <div class="col-md-4 mb-3">
+                    <a href="https://drive.google.com/file/d/1hgoyNbnuiFVx4-njhBvGHSeNhvbgTtry/view?usp=sharing"
+                        class="text-decoration-none text-dark" target="_blank">
+                        <div class="card border-info border-1">
+                            <img src="Images/Web development internship.jpg" class="card-img-top"
+                                alt="Web Full Stack Development">
+                            <div class="card-body">
+                                <h5 class="card-title">Web Full Stack Development – EduSkills</h5>
+                                <p class="card-text">8-week MERN stack internship building dynamic web applications.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <a href="https://drive.google.com/file/d/1J15egRcQ78A-3eOH6Yvb9xymh8r5nvLx/view?usp=sharing"
+                        class="text-decoration-none text-dark" target="_blank">
+                        <div class="card border-dark border-1">
+                            <img src="Images/Iot_page-0001.jpg" class="card-img-top" alt="Embedded Systems & IoT">
+                            <div class="card-body">
+                                <h5 class="card-title">Embedded Systems & IoT – Blackbucks</h5>
+                                <p class="card-text">8-week internship focused on IoT and microcontroller-based systems.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <a href="https://drive.google.com/file/d/1T5iCwpDN0pR1exjqNr1TcLN9LFMrvmuj/view?usp=sharing"
+                        class="text-decoration-none text-dark" target="_blank">
+                        <div class="card h-100 border-success border-1">
+                            <img src="Images/AIML_page-0001.jpg" class="card-img-top" alt="AI/ML Internship">
+                            <div class="card-body">
+                                <h5 class="card-title">AI/ML – Google</h5>
+                                <p class="card-text">Explored ML algorithms and implemented real-time prediction models
+                                    using Python.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-5 bg-white text-center">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-4 mb-3">
+                    <a href="https://drive.google.com/file/d/1CkjcBqg7WCVIV_duS7xV3XtYtdIY9ERB/view?usp=sharing"
+                        class="text-decoration-none text-dark" target="_blank">
+                        <div class="card p-3 h-100 border border-primary border-1">
+                            <img src="Images/python ibm.jpeg" class="card-img-top" alt="Python edX Certificate">
+                            <div class="card-body">
+                                <h5 class="card-title">Python – edX</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <a href="https://drive.google.com/file/d/1ATKz5x3LWKUSS3XQbLzF_31BKmQb0cbr/view?usp=sharing"
+                        class="text-decoration-none text-dark" target="_blank">
+                        <div class="card p-3 h-100 border border-danger border-1">
+                            <img src="Images/cisco js.jpg" class="card-img-top" alt="JavaScript Cisco Certificate">
+                            <div class="card-body">
+                                <h5 class="card-title">JavaScript Essentials 1 – Cisco</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <a href="https://drive.google.com/file/d/19rxQA_v0KCjGTzvJ7_MnSYKl3kOI1uZU/view?usp=sharing"
+                        class="text-decoration-none text-dark" target="_blank">
+                        <div class="card p-3 h-100 border border-success border-1">
+                            <img src="Images/c language.cms" class="card-img-top" alt="JavaScript Cisco Certificate">
+                            <div class="card-body">
+                                <h5 class="card-title">C Language – JNNYCET</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <a href="https://drive.google.com/file/d/1yNnpgkbaDwzMU4wPJp1kgRgJasXIVgaG/view?usp=sharing"
+                        class="text-decoration-none text-dark" target="_blank">
+                        <div class="card p-3 h-100 border border-warning border-1">
+                            <img src="Images/IOT Nptel_page-0001.jpg" class="card-img-top"
+                                alt="Nptel Internet of Things">
+                            <div class="card-body">
+                                <h5 class="card-title">Introduction to Internet of Things – NPTEL</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <a href="https://drive.google.com/file/d/1NvyXvHKfL8Q-WZ3bgJCDDAW3TasTmqI_/view?usp=sharing"
+                        class="text-decoration-none text-dark" target="_blank">
+                        <div class="card p-3 h-100 border border-info border-1">
+                            <img src="Images/ms office.avif" class="card-img-top" alt="JavaScript Cisco Certificate">
+                            <div class="card-body">
+                                <h5 class="card-title">Office Applications – JNNYCET</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Hackathons Section -->
+    <section id="hackathons" class="py-5 bg-light text-center">
+        <div class="container">
+            <h2 class="section-title">Hackathons</h2>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <a href="https://drive.google.com/file/d/1cyrWKwDO5M08CHI3PDJ5jxr01bwsDbRs/view?usp=drive_link"
+                        class="text-decoration-none text-dark" target="_blank">
+                        <div class="card h-100 border border-danger border-1">
+                            <img src="Images/SIH.jpg" class="card-img-top" alt="SIH 2024">
+                            <div class="card-body">
+                                <h5 class="card-title">Smart India Hackathon 2024</h5>
+                                <p class="card-text">Worked on forecasting water needs using a Flask app and reservoir
+                                    data.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <a href="https://drive.google.com/file/d/1PE8fbhtNEwVjra32p3NreH9h3bfThQ04/view?usp=sharing"
+                        class="text-decoration-none text-dark" target="_blank">
+                        <div class="card h-100 border border-success border-1">
+                            <img src="images/AICTE IDEA LAB FEST HARSHA.jpg" class="card-img-top" alt="AICTE IdeaLab">
+                            <div class="card-body">
+                                <h5 class="card-title">AICTE IdeaLab Hackathon</h5>
+                                <p class="card-text">Presented face recognition attendance system with LoRa, GPS, and
+                                    real-time display.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-white text-center">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-5 mb-3 text-start">
+                    <h4>Contact Info</h4>
+                    <p>Email: <a href="mailto:vhvardhan.naidu@gmail.com">vhvardhan.naidu@gmail.com</a></p>
+                    <p>LinkedIn: <a href="https://linkedin.com/in/vaddi-harsha-vardhan-68130a259" target="_blank">View
+                            Profile</a></p>
+                </div>
+
+                <div class="col-md-5 mb-3">
+                    <h4>Send a Message</h4>
+                    <form id="contact-form">
+                        <input type="text" class="form-control mb-2" name="name" placeholder="Your Name" required>
+                        <input type="email" class="form-control mb-2" name="email" placeholder="Your Email" required>
+                        <textarea class="form-control mb-2" name="message" placeholder="Your Message"
+                            required></textarea>
+                        <button class="btn btn-primary w-100" type="submit">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">&copy; 2025 Harsha Vardhan Vaddi | All rights reserved</p>
+    </footer>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxOe7PL1-F2M73ZkE5WwhvrUKd6lZg_o9fSVv41e50hKMC3Z0EobBpb_Wx9OVzNZWM4/exec';
+        const form = document.getElementById('contact-form');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+
+            const formData = {
+                name: form.name.value,
+                email: form.email.value,
+                message: form.message.value
+            };
+
+            fetch(scriptURL, {
+                method: 'POST',
+                body: JSON.stringify(formData),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+                .then(response => {
+                    alert("Message sent successfully!");
+                    form.reset();
+                })
+                .catch(error => {
+                    alert("Error sending message.");
+                    console.error(error);
+                });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
